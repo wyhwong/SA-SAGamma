@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  sagamma:
+    container_name: sagamma
+    image: sagamma
+    build: ./
+    working_dir: /app
+    environment:
+      - EMAIL=${email}
+    volumes:
+      - ./results:/app/results
+      - ./config:/app/config
+      - ./utils:/app/utils
+      - ./main.py:/app/main.py
+    command: python3 main.py ${args}
+
+  sagamma_jupyter:
+    container_name: sagamma_jupyter_${port}
+    image: sagamma
+    build: ./
+    working_dir: /app
+    environment:
+      - EMAIL=${email}
+    ports:
+      - ${port}:8888
+    volumes:
+      - ./results:/app/results
+      - ./config:/app/config
+      - ./utils:/app/utils
+      - ./config/jupyter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
+    command: jupyter notebook
