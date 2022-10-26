@@ -1,7 +1,13 @@
 # Semi-analytical method for simulating solar atmospheric gamma-ray flux
 
+## 2021 CUHK Physics SURIP Poster Presentation
+
+In the repo, please find the poster [here](https://github.com/wyhwong/SA-SAGamma/tree/main/presentation). We are glad to share that the poster [`Proton Motion`](https://github.com/wyhwong/SA-SAGamma/blob/main/presentation/Proton%20Motion%20in%20the%20Sun%20with%20PFSS%20Model.pdf) obtained Best Poster Award 3rd Prize in SURIP.
+
+---
+
 ## Description of Repo
-To be updated
+To be updated. The refactor of scripts are not done yet.
 
 ---
 
