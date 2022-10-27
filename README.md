@@ -1,4 +1,4 @@
-# Semi-Analytical method for simulating Solar Atmospheric gamma-ray flux
+# Semi Analytical Method for simulating Solar Atmospheric GAmma-ray flux
 
 ## 2021 CUHK Physics SURIP Poster Presentation
 
