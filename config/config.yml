@@ -1,0 +1,20 @@
+sun:
+  cr_number: 2149       # Carrington Rotation Number
+  rss: 2.5              # Source source radius of PFSS model (in solar radius)
+  resolution:
+    theta: 180          # Number of d(theta) in theta=[0, 180]
+    phi: 360            # Number of d(phi) in theta=[0, 360]
+    r: 25               # Number of dr in r=[1, rss]
+
+proton:
+  KE:
+    max: 10             # in GeV
+    min: 10             # in GeV
+  charge: 1             # in e
+  mass: 0.931           # in GeV/c^2
+  injection_pos:
+    r: 1.00430824       # in solar radius
+    theta: 0.5          # in pi
+    phi: 0.5            # in pi
+  sample_rate: 1.0e-6   # in second
+  runtime_max: 0.3      # max simulation time if the proton did not escape from sun

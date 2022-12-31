@@ -2,14 +2,15 @@ import numpy as np
 import pfsspy.coords
 from scipy import constants
 
+
 class Proton():
-    def __init__(config, magnetic_field):
+    def __init__(self, config, magnetic_field):
         self.config = config
         self.dt = config['sample_rate']
         self.position_record = []
         self.position = np.array(pfsspy.coords.sph2cart(self.config['injection_pos']['r'],
-                                                    self.config['injection_pos']['theta']*np.pi,
-                                                    self.config['injection_pos']['phi']*np.pi))
+                                                        self.config['injection_pos']['theta']*np.pi,
+                                                        self.config['injection_pos']['phi']*np.pi))
         self.position.append(self.init_pos)
         self.KE = np.random.uniform(self.config['KE']['max'],
                                     self.config['KE']['min'])
