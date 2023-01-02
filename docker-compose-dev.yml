@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  sagamma:
-    container_name: sagamma
-    image: sagamma
+  samsaga:
+    container_name: samsaga
+    image: samsaga
     volumes:
       - ./config:/app/config
       - ./utils:/app/utils

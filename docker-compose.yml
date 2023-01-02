@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  sagamma:
-    container_name: sagamma
-    image: sagamma
+  samsaga:
+    container_name: samsaga
+    image: samsaga
     build: ./
     environment:
       - EMAIL=${email}
@@ -11,9 +11,9 @@ services:
       - ./results:/app/results
     command: python3 main.py ${args}
 
-  sagamma_jupyter:
-    container_name: sagamma_jupyter_${port}
-    image: sagamma
+  samsaga_jupyter:
+    container_name: samsaga_jupyter_${port}
+    image: samsaga
     environment:
       - EMAIL=${email}
     ports:
