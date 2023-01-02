@@ -43,7 +43,7 @@ make port=<port> jupyter_up
 # Kill Jupyter server
 make jupyter_down
 ```
-After set up the server, you can go to [here](https://localhost:8888) and the password is `sagamma`.
+After set up the server, you can go to [here](https://localhost:8888) and the password is `samsaga`.
 
 ---
 
