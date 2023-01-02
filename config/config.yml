@@ -1,3 +1,5 @@
+output_dir: "/app/results"
+
 sun:
   cr_number: 2149       # Carrington Rotation Number
   rss: 2.5              # Source source radius of PFSS model (in solar radius)
@@ -7,6 +9,7 @@ sun:
     r: 25               # Number of dr in r=[1, rss]
 
 proton:
+  amount: 1000
   KE:
     max: 10             # in GeV
     min: 10             # in GeV
@@ -17,4 +20,4 @@ proton:
     theta: 0.5          # in pi
     phi: 0.5            # in pi
   sample_rate: 1.0e-6   # in second
-  runtime_max: 0.3      # max simulation time if the proton did not escape from sun
+  runtime_max: 1.       # max simulation time if the proton did not escape from sun

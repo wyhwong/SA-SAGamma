@@ -11,7 +11,8 @@ start:
 	email=${email} args=${args} docker-compose up sagamma
 
 develop:
-	email=${email} docker-compose -f docker-compose.yml -f docker-compose-dev.yml up sagamma
+	email=${email} docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d sagamma
+	docker exec -it sagamma bash
 
 jupyter_up:
 	port=${port} email=${email} docker-compose up -d sagamma_jupyter

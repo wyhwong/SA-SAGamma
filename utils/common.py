@@ -24,6 +24,10 @@ def get_proton_params():
     return get_config()['proton']
 
 
+def get_output_dir():
+    return get_config()['output_dir']
+
+
 def get_proton_mass_density():
     rhor = np.genfromtxt('results/rho.csv', delimiter=',')
     rho_against_r = interpol.interp1d(rhor.T[0], rhor.T[1],
